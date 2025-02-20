@@ -28,11 +28,6 @@ AZURE_DEPLOYMENT_NAME = os.getenv("AZURE_DEPLOYMENT_NAME", "default_deployment")
 
 app = Flask(__name__)
 
-# Azure OpenAI Configuration
-# AZURE_API_KEY = "ee65aca022a74803b2e2d1ff4c373b05"
-# AZURE_ENDPOINT = "https://firstsource.openai.azure.com"
-# AZURE_API_VERSION = "2024-02-15-preview"
-# AZURE_DEPLOYMENT_NAME = "gpt-4o-v05-13"
 
 def create_kernel_with_chat_completion(service_id: str) -> Kernel:
     """Create a kernel with Azure OpenAI chat completion service"""
